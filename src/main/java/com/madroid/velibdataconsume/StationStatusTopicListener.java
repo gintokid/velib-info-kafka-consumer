@@ -3,9 +3,8 @@ package com.madroid.velibdataconsume;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.madroid.velibdata.jpa.model.StationState;
-import com.madroid.velibdata.jpa.repository.StationStateRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.madroid.velibdataconsume.jpa.model.StationState;
+import com.madroid.velibdataconsume.jpa.repository.StationStateRepository;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 

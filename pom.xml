@@ -4,10 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.madroid</groupId>
-        <artifactId>velibdata-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.15</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
 
     <artifactId>velibdata-kafka-consume</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -16,6 +18,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <start-class>com.madroid.VelibdataConsumeApplication</start-class>
     </properties>
 
     <dependencies>
@@ -51,11 +54,7 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.madroid</groupId>
-            <artifactId>velibdata-jpa</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
 
     </dependencies>
 
@@ -65,6 +64,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
         </plugins>
     </build>
 
