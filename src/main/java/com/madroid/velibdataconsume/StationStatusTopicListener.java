@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.madroid.velibdataconsume.jpa.model.StationState;
 import com.madroid.velibdataconsume.jpa.repository.StationStateRepository;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,12 @@ public class StationStatusTopicListener {
     public StationStatusTopicListener(StationStateRepository stationStateRepository) {
         repository = stationStateRepository;
     }
+
+    @Value("${velibdata.kafka.topic.station-info}")
+    String velibDataInfoTopicName;
+
+    @Value("${velibdata.kafka.topic.station-status}")
+    String velibDataStatusTopicName;
 
 
     @KafkaListener(topics = "velibdata-station-status", groupId = "velibdata")
