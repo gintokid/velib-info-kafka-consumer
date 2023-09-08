@@ -46,5 +46,7 @@ public class StationInfoTopicListener {
         System.out.println("Saving " + stations.size() + " stations info IN PROGRESS");
         repository.saveAll(stations);
         System.out.println("Saving " + stations.size() + " stations info DONE");
+
+        System.exit(0);
     }
 }

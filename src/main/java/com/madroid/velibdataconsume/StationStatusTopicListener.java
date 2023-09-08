@@ -53,6 +53,8 @@ public class StationStatusTopicListener {
         repository.saveAll(states);
         System.out.println("Saving " + states.size() + " stations states DONE");
 
+        System.exit(0);
+
 
     }
 }
