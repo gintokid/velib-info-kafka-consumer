@@ -18,7 +18,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <start-class>com.madroid.VelibdataConsumeApplication</start-class>
+        <start-class>com.madroid.velibdataconsume.VelibdataConsumeApplication</start-class>
     </properties>
 
     <dependencies>
